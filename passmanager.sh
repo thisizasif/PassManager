@@ -60,9 +60,9 @@
         # Display menu
         echo "Menu:"
         echo "1. Generate Password"
-        echo "3. Display Saved Passwords"
-        echo "4. Retrieve Password"
-        echo "5. Quit"
+        echo "2. Display Saved Passwords"
+        echo "3. Retrieve Password"
+        echo "4. Quit"
        # echo "2. Save Password"
 
         # Get user choice
