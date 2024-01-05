@@ -23,13 +23,13 @@ PassManager is a command-line Password Manager tool designed for Termux. It allo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/PassManager.git
+   git clone https://github.com/thisizasif/PassManager.git
    ```
 
 2. Change into the PassManager directory:
 
    ```bash
-   cd PassManager
+   cd passmanager
    ```
 
 3. Run the PassManager script:
