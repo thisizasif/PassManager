@@ -31,8 +31,13 @@ PassManager is a command-line Password Manager tool designed for Termux. It allo
    ```bash
    cd passmanager
    ```
+3. Execute Permission
 
-3. Run the PassManager script:
+ ```bash
+chmod +x passmanager.sh
+   ```
+
+4. Run the PassManager script:
 
    ```bash
    ./passmanager.sh
