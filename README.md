@@ -18,7 +18,7 @@ Key Features:
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/thisizasif)
+- [@thisizasif](https://www.github.com/thisizasif)
 
 
 ## Badges
