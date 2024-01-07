@@ -10,8 +10,19 @@
     echo "|  __/ (_| \__ \__ \ |  | | (_| | | | | (_| | (_| |  __/ |   "
     echo "|_|   \__,_|___/___/_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|   "
     echo "                                             |___/           "
-    echo "Crafted by Thisizasif                                      "
-    echo "Password Manager Tool                                       "
+# Welcome message
+echo "╔════════════════════════════════════════════════════════╗"
+echo "║                    Password Manager Tool                  ║"
+echo "║                    ---------------------                 ║"
+echo "║                        Version: $version 1.0.0                 ║"
+echo "║                  Crafted by Thisizasif                    ║"
+echo "║     GitHub: https://github.com/thisizasif/PassManager ║"
+echo "╚════════════════════════════════════════════════════════╝"
+echo "   Welcome to the Password Manager Tool, your secure        "
+echo "   solution for managing and safeguarding your passwords.    "
+echo "   Explore the options below to enhance your security!       "
+echo "------------------------------------------------------------"
+
 
     # Function to generate a random password
     generate_password() {
@@ -60,9 +71,9 @@
         # Display menu
         echo "Menu:"
         echo "1. Generate Password"
-        echo "2. Display Saved Passwords"
-        echo "3. Retrieve Password"
-        echo "4. Quit"
+        echo "3. Display Saved Passwords"
+        echo "4. Retrieve Password"
+        echo "5. Quit"
        # echo "2. Save Password"
 
         # Get user choice
