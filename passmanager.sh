@@ -1,28 +1,29 @@
 #!/bin/bash
 
-# Clear the terminal
-clear
-
 # Banner
-echo " ____               __  __                                   "
-echo "|  _ \ __ _ ___ ___|  \/  | __ _ _ __   __ _  __ _  ___ _ __ "
-echo "| |_) / _\` / __/ __| |\/| |/ _\` | '_ \ / _\` |/ _\` |/ _ \ '__|"
-echo "|  __/ (_| \__ \__ \ |  | | (_| | | | | (_| | (_| |  __/ |   "
-echo "|_|   \__,_|___/___/_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|   "
-echo "                                             |___/           "
+banner() {
+    echo " ____               __  __                                   "
+    echo "|  _ \ __ _ ___ ___|  \/  | __ _ _ __   __ _  __ _  ___ _ __ "
+    echo "| |_) / _\` / __/ __| |\/| |/ _\` | '_ \ / _\` |/ _\` |/ _ \ '__|"
+    echo "|  __/ (_| \__ \__ \ |  | | (_| | | | | (_| | (_| |  __/ |   "
+    echo "|_|   \__,_|___/___/_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|   "
+    echo "                                             |___/           "
+}
 
 # Welcome message
-echo "╔════════════════════════════════════════════════════════╗"
-echo "║                    Password Manager Tool                  ║"
-echo "║                    ---------------------                 ║"
-echo "║                        Version: 1.0.0                    ║"
-echo "║                  Crafted by Thisizasif                    ║"
-echo "║     GitHub: https://github.com/thisizasif/PassManager     ║"
-echo "╚══════════════════════════════════════════════════════════╝"
-echo "   Welcome to the Password Manager Tool, your secure        "
-echo "   solution for managing and safeguarding your passwords.    "
-echo "   Explore the options below to enhance your security!       "
-echo "------------------------------------------------------------"
+welcome_message() {
+    echo "╔════════════════════════════════════════════════════════╗"
+    echo "║                    Password Manager Tool                  ║"
+    echo "║                    ---------------------                 ║"
+    echo "║                        Version: 1.0.0                    ║"
+    echo "║                  Crafted by Thisizasif                    ║"
+    echo "║     GitHub: https://github.com/thisizasif/PassManager     ║"
+    echo "╚══════════════════════════════════════════════════════════╝"
+    echo "   Welcome to the Password Manager Tool, your secure        "
+    echo "   solution for managing and safeguarding your passwords.    "
+    echo "   Explore the options below to enhance your security!       "
+    echo "------------------------------------------------------------"
+}
 
 # Function to generate a random password
 generate_password() {
@@ -104,17 +105,20 @@ delete_password() {
     echo "Password for $password_name deleted successfully."
 }
 
+# Main loop
 while true; do
+    clear
+    banner
+    welcome_message
+
     # Display menu
-echo -e "\n\033[1;33;4m======= \033[1;34mMenu\033[1;33;4m =======\033[0m"
-
-echo -e "1. \033[1;36mGenerate Password\033[0m"
-echo -e "2. \033[1;36mDisplay Saved Passwords\033[0m"
-echo -e "3. \033[1;36mRetrieve Password\033[0m"
-echo -e "4. \033[1;36mUpdate Password\033[0m"
-echo -e "5. \033[1;36mDelete Password\033[0m"
-echo -e "6. \033[1;32mQuit\033[0m"
-
+    echo -e "\033[1;33;4m======= \033[1;34mMenu\033[1;33;4m =======\033[0m"
+    echo -e "1. \033[1;36mGenerate Password\033[0m"
+    echo -e "2. \033[1;36mDisplay Saved Passwords\033[0m"
+    echo -e "3. \033[1;36mRetrieve Password\033[0m"
+    echo -e "4. \033[1;36mUpdate Password\033[0m"
+    echo -e "5. \033[1;36mDelete Password\033[0m"
+    echo -e "6. \033[1;32mQuit\033[0m"
 
     # Get user choice
     read -p "Enter your choice (1-6): " choice
@@ -123,8 +127,8 @@ echo -e "6. \033[1;32mQuit\033[0m"
         1)
             # Generate Password
             echo -e "\n\033[1;33;4m======= \033[1;34mGenerate Password\033[1;33;4m =======\033[0m"
-echo -e "1. \033[1;36mAuto-generate\033[0m"
-echo -e "2. \033[1;36mManually enter\033[0m"
+            echo -e "1. \033[1;36mAuto-generate\033[0m"
+            echo -e "2. \033[1;36mManually enter\033[0m"
 
             read -p "Choose an option (1-2): " gen_option
 
@@ -232,7 +236,4 @@ echo -e "2. \033[1;36mManually enter\033[0m"
         echo "Exiting the Password Manager Tool. Goodbye!"
         exit 0
     fi
-
-    # Clear the terminal for the next iteration
-    
 done
