@@ -234,5 +234,5 @@ echo -e "2. \033[1;36mManually enter\033[0m"
     fi
 
     # Clear the terminal for the next iteration
-    clear
+    
 done
